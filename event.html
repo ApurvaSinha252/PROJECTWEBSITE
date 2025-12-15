@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meet &Events @ Hotel GoldenPink</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .nav{
+            display: grid;
+            grid-template-columns: 2fr repeat(4,1fr);
+            background-color: goldenrod;
+            padding: 15px;
+            align-items: center;
+        }
+
+        .logo{
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav a{
+            text-decoration: none;
+            background-color: goldenrod;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .hero{
+            background-image: url("https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200");
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding-top: 90px;
+        }
+
+        .hero h1{
+            font-size: 40px;
+        }
+
+        .meet{
+            padding: 40px 8%;
+        }
+
+        .meet h2{
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 20px;
+        }
+
+        .card{
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card img{
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .card-content{
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3{
+            color: goldenrod;
+            margin-bottom: 10px;
+        }
+
+        .card-content p{
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .card-content a{
+            text-decoration: none;
+            background-color: #e36;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        footer{
+            background-color: goldenrod;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo">GOLDENPINK</div>
+        <a href="MAINPAGE.html">Home</a>
+        <a href="stay.html">Stay</a>
+        <a href="dine.html">Dine</a>
+        <a href="event.html">Meet</a>
+    </div>
+
+    <div class="hero">
+        <h1>Meet at GoldenPink</h1>
+        <p>Elegant spaces for business and celebrations</p>
+    </div>
+
+    <section class="meet">
+        <h2>Our Event Spaces</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://www.thewujilresort.com/wp-content/uploads/sites/27/2024/09/Meeting-room-1-1080p.jpg">
+                   <div class="card-content">
+                    <h3>Conference Hall</h3>
+                    <p>Professional setup for meetings and seminars.</p>
+                    <a href="#">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800">
+                <div class="card-content">
+                    <h3>Board Room</h3>
+                    <p>Ideal for executive discussions and presentations.</p>
+                    <a href="#">Book Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.getyourvenue.com/uploads/venue-images/176/5subvenue1.jpg">             
+                 <div class="card-content">
+                    <h3>Banquet Hall</h3>
+                    <p>Perfect for weddings and grand celebrations.</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+            Hotel GoldenPink | Meet & Events
+    </footer>
+
+</body>
+</html>

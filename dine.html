@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dining</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: goldenrod;
+        }
+
+        header {
+            display: block;
+            text-align: center;
+            width: 100%;
+            background-color: rgb(241,106,140);
+            padding: 15px;
+            color: white;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-box {
+            background: rgb(243,233,233);
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        .description {
+            margin-top: 10px;
+            color: #555;
+            font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: rgb(234,25,85);
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    OUR DINING EXPERIENCES
+</header>
+
+<div class="grid">
+
+    <div class="product-box">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+        <h2>Fine Dining</h2>
+        <p class="description">Elegant meals with premium service.</p>
+        <a href="https://cdn.dribbble.com/userupload/15322898/file/original-deff360c186b3a4fc7d2508f80c04023.png?resize=400x0" class="btn">View Menu</a>
+        <a href="#" class="btn">Reserve</a>
+    </div>
+
+    <div class="product-box">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de">
+        <h2>Café Golden</h2>
+        <p class="description">Fresh coffee, desserts, and light snacks.</p>
+        <a href="#" class="btn">Explore</a>
+        <a href="#" class="btn">Order</a>
+    </div>
+
+    <div class="product-box">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+        <h2>Pink Lounge</h2>
+        <p class="description">Signature drinks in a relaxed ambience.</p>
+        <a href="#" class="btn">View Menu</a>
+        <a href="#" class="btn">Book Table</a>
+    </div>
+
+</div>
+
+</body>
+</html>

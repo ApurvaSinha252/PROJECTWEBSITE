@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: goldenrod;
+        }
+
+        header {
+            background: #f16a8c;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            font-size: 18px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            padding: 20px;
+        }
+
+        .box {
+            background: #fff;
+            padding: 18px;
+            border-radius: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #f16a8c;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Contact GoldenPink
+    </header>
+
+    <div class="grid">
+        <div class="box">
+            <p><b>Address</b><br>Crossings Republik, Ghaziabad</p>
+            <p><b>Phone</b><br>+91 62055 60748</p>
+            <p><b>Email</b><br>info@goldenpinkhotel.com</p>
+        </div>
+
+        <div class="box">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button>Send</button>
+        </div>
+    </div>
+
+</body>
+</html>

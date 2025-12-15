@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Booking</title>
+    <style>
+        body {
+            background-color: rgb(241, 245, 149);
+            font-family: Arial;
+            align-content: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            background-color: rgb(237, 168, 168);
+            width: 380px;
+            margin: auto;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .book{
+            background-color: rgb(145, 251, 145);
+            color: rgb(85, 50, 50);
+            border-radius:10px ;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .box{
+            border-radius: 6px;
+        }
+        img{
+            width: 90px;
+            height:90px;
+            border-radius: 45%;
+        }
+    </style>
+</head>
+
+<body>
+<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNB1qbg8zpmJ8ZNi66f7TmCVnP7lQSHiag3w&s"></center>
+<h1>Book Your Stay</h1>
+
+<form>
+    <label>Full Name:</label>
+    <input type="text" class="box">
+
+    <label>Email:</label>
+    <input type="email" class="box">
+
+    <label>Phone Number:</label>
+    <input type="tel" class="box">
+
+    <label>Check-in Date:</label>
+    <input type="date">
+
+    <label>Check-out Date:</label>
+    <input type="date">
+
+    <label>Room Type:</label>
+    <select>
+        <option>--Select--</option>
+        <option>Single Room</option>
+        <option>Double Room</option>
+        <option>Presidential Suite</option>
+        <option>Family Room</option>
+        <option>Studio Suite</option>
+        <option>Triple Room</option>
+    </select>
+
+    <label>Number of Guests:</label>
+    <input type="number" class="box">
+
+    <label>Special Requests:</label>
+    <textarea rows="3" class="box"></textarea>
+
+    <input type="submit" class="book" value="Book Now">
+    <input type="reset" class="book" value="Reset">
+</form>
+
+</body>
+</html>

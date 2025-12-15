@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: goldenrod;
+        }
+        header {
+            display: block;
+            text-align: center;
+            width: 100%;
+            background-color: rgb(241, 106, 140);
+            padding: 15px;
+            color: white;
+            font-size: 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-box {
+            background: rgb(243, 233, 233);
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        .price {
+            color: green;
+            font-size: 20px;
+        }
+
+        .description {
+            margin-top: 10px;
+            color: #555;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: rgb(234, 25, 85);
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    CHOOSE THE PERFECT ROOM ACCORDING TO YOUR NEEDS!
+</header>
+
+<div class="grid">
+    <div class="product-box">
+        <img src="https://www.parkregiskriskin.ae/wp-content/uploads/2020/07/room-twin-bed-2520x1400.jpg">
+       <h2>Double Room</h2>
+        <p class="price">₹5000/night</p>
+        <p class="description">Your perfect stay for two.</p>
+        <a href="https://play-lh.googleusercontent.com/sqCIkQM-QqMlue5-DWpCoWUQjHwbQ8F3emvxNo9JL7ea3eo_3ZzDsSrGu6RQvO3dhVU" class="btn">Add to Wishlist</a>
+        <a href="book.html" class="btn">Book Now</a>
+    </div>
+    <div class="product-box">
+        <img src="https://victoriahotel.co.uk/sites/default/files/2022-09/bc-victoria-accom_standard-single-room-301-at-victoria-hotel.jpg">
+        <h2>Single Room</h2>
+        <p class="price">₹3000/night</p>
+        <p class="description">Cozy Comfort, Just for You.</p>
+        <a href="https://play-lh.googleusercontent.com/sqCIkQM-QqMlue5-DWpCoWUQjHwbQ8F3emvxNo9JL7ea3eo_3ZzDsSrGu6RQvO3dhVU" class="btn">Add to Wishlist</a>
+        <a href="book.html" class="btn">Book Now</a>
+    </div>
+    <div class="product-box">
+        <img src="https://webbox.imgix.net/images/qphvuqvdyujmiiju/bf9f8ed8-de4a-4416-aae0-cc251ddd969b.jpg?auto=format,compress&fit=crop&crop=entropy">
+        <h2>Triple Rooms</h2>
+        <p class="price">₹8500/night</p>
+        <p class="description">Comfortably Accommodating Three: Your Space to Unwind.</p>
+        <a href="https://play-lh.googleusercontent.com/sqCIkQM-QqMlue5-DWpCoWUQjHwbQ8F3emvxNo9JL7ea3eo_3ZzDsSrGu6RQvO3dhVU" class="btn">Add to Wishlist</a>
+        <a href="book.html" class="btn">Book Now</a>
+    </div>
+    <div class="product-box">
+        <img src="https://ddeu48opr85vl.cloudfront.net/b2c/original/2025Q2/MOZRH_33_RM_407_LVNG_01XA-1744274748.jpg">
+       <h2>Presidential Suites</h2>
+        <p class="price">₹18000/night</p>
+        <p class="description">Spacious Serenity.</p>
+        <a href="https://play-lh.googleusercontent.com/sqCIkQM-QqMlue5-DWpCoWUQjHwbQ8F3emvxNo9JL7ea3eo_3ZzDsSrGu6RQvO3dhVU" class="btn">Add to Wishlist</a>
+        <a href="book.html" class="btn">Book Now</a>
+    </div>
+    <div class="product-box">
+        <img src="https://b-cdn.springnest.com/media/img/17v/fullsize-82524236.jpg?width=800">
+        <h2>Family Room</h2>
+        <p class="price">₹10999/night</p>
+        <p class="description">Your Home Base for Family Adventures.</p>
+        <a href="https://play-lh.googleusercontent.com/sqCIkQM-QqMlue5-DWpCoWUQjHwbQ8F3emvxNo9JL7ea3eo_3ZzDsSrGu6RQvO3dhVU" class="btn">Add to Wishlist</a>
+        <a href="book.html" class="btn">Book Now</a>
+    </div>
+    <div class="product-box">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/99/c3/a7/studio-suite-with-an.jpg">
+       <h2>Studio Suites</h2>
+        <p class="price">₹11199</p>
+        <p class="description">More Than a Room, It's Your Studio.</p>
+        <a href="https://play-lh.googleusercontent.com/sqCIkQM-QqMlue5-DWpCoWUQjHwbQ8F3emvxNo9JL7ea3eo_3ZzDsSrGu6RQvO3dhVU" class="btn">Add to Wishlist</a>
+        <a href="book.html" class="btn">Book Now</a>
+    </div>
+</div>
+
+
+</body>
+</html>
